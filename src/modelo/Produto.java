@@ -1,6 +1,6 @@
 package modelo;
 
-public class Produtos {
+public class Produto {
 	private String nome;
 	private Float valor;
 	private int quantidade;
@@ -28,6 +28,10 @@ public class Produtos {
 	}
 	public void setResultado(Float resultado) {
 		this.resultado = resultado;
+	}
+	public char[] getResultados() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	}
