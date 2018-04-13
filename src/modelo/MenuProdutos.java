@@ -1,13 +1,16 @@
 package modelo;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
 public class MenuProdutos {
 	static Integer valorMenu = 0;
 	static Scanner entrada = new Scanner(System.in);
-	static Produto produtos = new Produto();
+	static List<Produto> produto = new ArrayList<Produto>();
 
 	public static void main(String[] args) {
 		while (valorMenu !=6) {
@@ -45,11 +48,11 @@ public class MenuProdutos {
 //		produtos.setQuantidade(quantidade);
 //		produtos.setValor(valor);
 
-		System.err.println("Informe o nome do produto");
+		System.err.println("Informe o nome do produto:");
 		produtos.setNome(entrada.nextLine());
-		System.err.println("Informe o valor do produto");
+		System.err.println("Informe o valor do produto:");
 		Float valor = entrada.nextFloat();
-		System.err.println("Informe a quantidade do produto");
+		System.err.println("Informe a quantidade do produto:");
 		Integer quantidade = entrada.nextInt();
 		
 		

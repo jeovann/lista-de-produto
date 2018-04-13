@@ -3,8 +3,21 @@ package modelo;
 public class Produto {
 	private String nome;
 	private Float valor;
-	private int quantidade;
+	private Integer quantidade;
 	private Float resultado;
+	
+	public Produto (String nome, int quantidade, float valor) {
+		this.nome = nome;
+		this.quantidade = quantidade;
+		this.valor = valor;
+		this.resultado = valor * quantidade;
+	}
+	
+	public String toString() {
+		return "Nome: " + nome + "; quantidade.: " + quantidade + "; Preço: "
+				+ valor + "; Resultado: " + resultado;
+	}
+	
 	public String getNome() {
 		return nome;
 	}
