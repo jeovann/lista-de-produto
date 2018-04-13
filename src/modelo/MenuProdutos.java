@@ -14,6 +14,10 @@ public class MenuProdutos {
 			if (valorMenu == 1) {
 				informarValor();
 				chamarMenu();
+			}else if(valorMenu==2) {
+				imprimir();
+				chamarMenu();
+			}else if (valorMenu==3) {
 				System.exit(0);
 			} else {
 				chamarMenu();
@@ -34,6 +38,9 @@ public class MenuProdutos {
 				Integer quantidade = entrada.nextInt();
 				System.err.println("Valor do Produto");
 				Float valor = entrada.nextFloat();
+				
+				Produto Produto = new Produto(nome, quantidade, valor);
+				Produto.add(Produto);
 				
 			}		
 			

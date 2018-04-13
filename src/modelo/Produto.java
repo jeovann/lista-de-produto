@@ -46,6 +46,11 @@ public class Produto {
 	public Float getResultados() {
 		return resultado;
 	}
+
+	public void add(Produto produto) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	}
 	
