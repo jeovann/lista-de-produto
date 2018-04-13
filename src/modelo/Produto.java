@@ -14,8 +14,8 @@ public class Produto {
 	}
 	
 	public String toString() {
-		return "Nome: " + nome + "; quantidade.: " + quantidade + "; Preço: "
-				+ valor + "; Resultado: " + resultado;
+		return "Nome: " + nome + "; \n >Quantidade.: " + quantidade + "; \n >Preço: "
+				+ valor + "; \n >Resultado: " + resultado;
 	}
 	
 	public String getNome() {
@@ -45,11 +45,6 @@ public class Produto {
 	}
 	public Float getResultados() {
 		return resultado;
-	}
-
-	public void add(Produto produto) {
-		// TODO Auto-generated method stub
-		
 	}
 	
 	}

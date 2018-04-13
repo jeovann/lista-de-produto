@@ -27,20 +27,20 @@ public class MenuProdutos {
 			private static void imprimir() {
 				for (Produto produto : produtos) {
 					System.err.println(produto);
+					
 		}
 	}
 
-
 			private static void informarValor() {
-				System.err.println("\nNome do Produto");
+				System.err.println("Nome do Produto");
 				String nome = entrada.next();
 				System.err.println("Quantidade de Produto");
 				Integer quantidade = entrada.nextInt();
 				System.err.println("Valor do Produto");
 				Float valor = entrada.nextFloat();
 				
-				Produto Produto = new Produto(nome, quantidade, valor);
-				Produto.add(Produto);
+				Produto novoProduto = new Produto(nome, quantidade, valor);
+				produtos.add(novoProduto);
 				
 			}		
 			
