@@ -41,10 +41,10 @@ public class Produto {
 	}
 	public void setResultado(Float resultado) {
 		this.resultado = resultado;
+		this.resultado = quantidade*valor;
 	}
-	public char[] getResultados() {
-		// TODO Auto-generated method stub
-		return null;
+	public Float getResultados() {
+		return resultado;
 	}
 	
 	}
